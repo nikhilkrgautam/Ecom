@@ -78,7 +78,7 @@
                                 <div class="category">
                                     <div class="ht__cat__thumb">
                                         <a href="product.php?id=<?php echo $list['id']?>">
-                                            <img src="images/brand/6.jpg" alt="product images">
+                                            <img src="images/brand/<?php echo $list['id']?>.jpg" alt="product images">
                                         </a>
                                     </div>
                                     <div class="fr__hover__info">
@@ -125,7 +125,7 @@
                                 <div class="category">
                                     <div class="ht__cat__thumb">
                                         <a href="product.php?id=<?php echo $list['id']?>">
-                                            <img src="images/brand/7.jpg" alt="product images">
+                                            <img src="images/brand/<?php echo $list['id']?>.jpg" alt="product images">
                                         </a>
                                     </div>
                                     <div class="fr__hover__info">
