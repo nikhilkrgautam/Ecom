@@ -100,7 +100,7 @@ if($cat_id>0 && ($sub_categories!='' && $sub_categories>0)){
 											<div class="category">
 												<div class="ht__cat__thumb">
 													<a href="product.php?id=<?php echo $list['id']?>">
-														<img src="images/product/13.jpg" alt="product images">
+														<img src="images/brand/<?php echo $list['id']?>.jpg" alt="product images">
 													</a>
 												</div>
 												<div class="fr__hover__info">

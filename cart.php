@@ -50,15 +50,15 @@ require('top.php');
 											$qty=$val['qty'];
 											?>
 											<tr>
-												<td class="product-thumbnail"><a href="#"><img src="images/brand/7.jpg"  /></a></td>
+												<td class="product-thumbnail"><a href="#"><img src="images/brand/<?php echo $productArr[0]['id']?>.jpg"  /></a></td>
 												<td class="product-name"><a href="#"><?php echo $pname?></a>
 													
 												</td>
-												<td class="product-price"><span class="amount"><?php echo $price * 10 ?> </span></td>
+												<td class="product-price"><span class="amount"><?php echo $price * $qty ?> </span></td>
 												<td class="product-quantity"><input type="number" id="<?php echo $key?>qty" value="<?php echo $qty?>" />
 												<br/><a href="javascript:void(0)" onclick="manage_cart('<?php echo $key?>','update')">update</a>
 												</td>
-												<td class="product-subtotal"><?php echo $qty*$price*10 ?></td>
+												<td class="product-subtotal"><?php echo $qty*$price ?></td>
 												<td class="product-remove"><a href="javascript:void(0)" onclick="manage_cart('<?php echo $key?>','remove')"><i class="icon-trash icons"></i></a></td>
 											</tr>
 											<?php } } ?>
